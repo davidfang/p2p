@@ -165,9 +165,9 @@ class VerificationCode extends ActiveRecord
                 throw new ErrorException('验证码发送错误', ErrorCode::Send_email_error);
             }
         } else {
-            if (Utils::sendSMS($this->field, $content) < 0) {
-                throw new ErrorException('验证码发送错误', ErrorCode::Send_phone_error);
-            }
+//            if (Utils::sendSMS($this->field, $content) < 0) {
+//                throw new ErrorException('验证码发送错误', ErrorCode::Send_phone_error);
+//            }
         }
     }
 }
